@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.wrap{
+    width:100% ;
+	margin: auto;
+
+}
+
+.socialBar{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	background: whitesmoke;
+	padding: 5px;
+	max-width: 1100px;
+    margin: auto;
+    height:32px;
+	box-sizing: border-box; /*!*/
+}
+.socialBar li{
+	margin: 5px;
+}
+.header{
+	width: 100%;
+    max-width: 1100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    height: 76px;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	
+	
+}
+
+.navbar li a{
+	margin-right: 5px;
+	color: green;
+	padding-bottom: 22.3px;
+	
+}
+a:hover{
+	border-bottom: 4px solid green;
+}
+
+.banner{
+	width: 100%; 
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+	display: flex;
+	align-items: center;
+	background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px;
+	margin-bottom: 30px;
+	line-height: 1.4;
+}
+
+.banner h1{
+	color: #fff;
+	font-size: 36px;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 100%;  /*這裡為什麼他不會自動符合區塊？*/
+	padding: 20px;
+	transition: all 0.2s;
+}
+
+.products{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    max-width: 1100px;
+	margin: 10px auto;
+	gap:30px;
+	padding: 20px;
+}
+
+.lesson1, .lesson2,  .lesson3{
+	width: 100%;
+	border: 1px solid smokewhite;
+	box-shadow: 0px 2px 4px 0px  rgba(0,0,0,0.16);
+	text-align: center;
+	border-radius: 5px;
+	padding: 20px;
+
+}
+
+h4{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+p{
+	text-align: left;
+	line-height: 1.4;
+}
+
+
+.jQuery_feature{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 5px;
+}
+
+h5{
+	text-align: left;
+}
+
+.jQuery_feature li{
+	line-height: 1.4;
+	list-style:disc inside none;
+}
+
+
+
+.footer{
+    background:gray;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
